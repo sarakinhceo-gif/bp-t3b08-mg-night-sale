@@ -1,199 +1,848 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>비주류 문화 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마곡 유흥 할인 | 프리미엄 유흥 정보 | t3b08-mg-night-sale</title>
+    <meta name="description" content="마곡 지역 프리미엄 유흥 업소 할인 정보를 제공합니다. 엄선된 라운지, 바, 클럽의 멤버십 혜택과 특별 이벤트를 확인하세요. 전문가가 검증한 마곡 유흥 할인 가이드.">
+    <meta name="keywords" content="마곡 유흥 할인, 마곡 유흥, 마곡 할인, 마곡 라운지, 마곡 바, 마곡 클럽, 마곡 유흥 정보, 마곡 프리미엄 유흥">
+    <link rel="canonical" href="https://t3b08-mg-night-sale.vercel.app/">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+
+    <!-- OG 메타 -->
+    <meta property="og:title" content="마곡 유흥 할인 | 프리미엄 유흥 정보">
+    <meta property="og:description" content="마곡 지역 프리미엄 유흥 업소 할인 정보를 제공합니다. 엄선된 라운지, 바, 클럽의 멤버십 혜택과 특별 이벤트를 확인하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b08-mg-night-sale.vercel.app/">
+    <meta property="og:image" content="og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마곡 유흥 할인 | 프리미엄 유흥 정보">
+    <meta name="twitter:description" content="마곡 지역 프리미엄 유흥 업소 할인 정보를 제공합니다. 엄선된 라운지, 바, 클럽의 멤버십 혜택과 특별 이벤트를 확인하세요.">
+    <meta name="twitter:image" content="og-image.svg">
+
+    <!-- JSON-LD 스키마 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "마곡 유흥 할인",
+        "description": "마곡 지역 프리미엄 유흥 업소 할인 정보 제공",
+        "url": "https://t3b08-mg-night-sale.vercel.app/",
+        "telephone": "010-6279-0862",
+        "areaServed": {
+            "@type": "City",
+            "name": "마곡"
+        },
+        "offers": {
+            "@type": "Offer",
+            "description": "마곡 유흥 할인 멤버십 및 특별 혜택"
+        }
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #1a1a1a;
+            color: #fafaf5;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: #fafaf5;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            letter-spacing: 0.08em;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            letter-spacing: 0.06em;
+            margin-bottom: 48px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            line-height: 1.3;
+            letter-spacing: 0.04em;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.9;
+            margin-bottom: 24px;
+            color: #e0ddd5;
+        }
+
+        a {
+            color: #c5a880;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(197, 168, 128, 0.3);
+            transition: border-color 0.3s ease;
+        }
+
+        a:hover {
+            border-bottom-color: #c5a880;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 72px;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: linear-gradient(180deg, rgba(26,26,26,0.98) 0%, rgba(26,26,26,0.85) 100%);
+            border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .header-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            letter-spacing: 0.12em;
+            color: #c5a880;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .logo:hover {
+            border: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #e0ddd5;
+            border: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #c5a880;
+            border: none;
+        }
+
+        .nav-phone {
+            color: #c5a880;
+            font-weight: 700;
+        }
+
+        /* Hamburger Menu for Mobile */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background-color: #c5a880;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background: rgba(26,26,26,0.98);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 48px 72px;
+            flex-direction: column;
+            gap: 24px;
+            border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+        }
+
+        .mobile-nav.active {
+            display: flex;
+        }
+
+        .mobile-nav a {
+            font-size: 1.1rem;
+            letter-spacing: 0.06em;
+            color: #e0ddd5;
+            border: none;
+        }
+
+        .mobile-nav a:hover {
+            color: #c5a880;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2420 40%, #1a1a1a 100%);
+            border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+            padding: 120px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 30% 50%, rgba(197, 168, 128, 0.08) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 30%, rgba(197, 168, 128, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #c5a880;
+            letter-spacing: 0.12em;
+            margin-bottom: 48px;
+        }
+
+        .hero-divider {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #c5a880, transparent);
+            margin: 48px auto;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            padding: 16px 48px;
+            border: 1px solid #c5a880;
+            color: #c5a880;
+            font-family: 'Georgia', serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+            background: transparent;
+            border-radius: 0;
+        }
+
+        .hero-cta:hover {
+            background: rgba(197, 168, 128, 0.1);
+            border-color: #c5a880;
+        }
+
+        /* Main Content Sections */
+        main {
+            padding: 120px 0;
+        }
+
+        section {
+            margin-bottom: 120px;
+            position: relative;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #c5a880;
+            margin-top: 16px;
+        }
+
+        /* Drop Cap */
+        .drop-cap::first-letter {
+            font-size: 4.2rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 12px;
+            margin-top: 8px;
+            color: #c5a880;
+            font-weight: 700;
+        }
+
+        /* Fine Borders */
+        .bordered-block {
+            border: 1px solid rgba(197, 168, 128, 0.2);
+            padding: 48px;
+            margin: 48px 0;
+        }
+
+        /* Review Cards */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 48px;
+        }
+
+        .review-card {
+            border: 1px solid rgba(197, 168, 128, 0.15);
+            padding: 36px;
+            transition: border-color 0.3s ease;
+        }
+
+        .review-card:hover {
+            border-color: rgba(197, 168, 128, 0.4);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(197, 168, 128, 0.1);
+        }
+
+        .review-author {
+            font-size: 0.9rem;
+            letter-spacing: 0.06em;
+            color: #c5a880;
+        }
+
+        .review-date {
+            font-size: 0.75rem;
+            color: #888580;
+            letter-spacing: 0.04em;
+        }
+
+        .review-stars {
+            color: #c5a880;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            font-size: 0.9rem;
+            color: #e0ddd5;
+            line-height: 1.8;
+        }
+
+        /* Features / Benefits */
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(197, 168, 128, 0.1);
+            font-size: 1.05rem;
+            letter-spacing: 0.03em;
+            color: #e0ddd5;
+        }
+
+        .features-list li::before {
+            content: '◆';
+            color: #c5a880;
+            margin-right: 16px;
+            font-size: 0.7rem;
+        }
+
+        /* Contact Block */
+        .contact-block {
+            text-align: center;
+            padding: 72px 0;
+            border-top: 1px solid rgba(197, 168, 128, 0.15);
+            border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+        }
+
+        .contact-block h2 {
+            margin-bottom: 16px;
+        }
+
+        .contact-phone {
+            font-size: 2rem;
+            letter-spacing: 0.08em;
+            color: #c5a880;
+            border: none;
+            display: inline-block;
+            margin: 24px 0;
+        }
+
+        .contact-phone:hover {
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            padding: 72px 0 48px;
+            border-top: 1px solid rgba(197, 168, 128, 0.1);
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+            color: #888580;
+            letter-spacing: 0.04em;
+            margin-bottom: 8px;
+        }
+
+        footer .copyright {
+            color: #666360;
+            font-size: 0.75rem;
+        }
+
+        /* Cinematic Gradient Overlay */
+        .gradient-overlay {
+            position: relative;
+        }
+
+        .gradient-overlay::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(180deg, transparent 0%, #1a1a1a 100%);
+            pointer-events: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 0 32px;
+            }
+
+            .header-inner {
+                padding: 20px 32px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .mobile-nav {
+                padding: 32px;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 32px;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding: 100px 0 60px;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .review-card {
+                padding: 28px;
+            }
+
+            .bordered-block {
+                padding: 32px;
+                margin: 32px 0;
+            }
+
+            .contact-phone {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 80px 0;
+            }
+
+            section {
+                margin-bottom: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .header-inner {
+                padding: 16px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div class="wrapper">
     <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>비주류 문화 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>비주류 문화</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h3>
-          <p>디지털 폰트가 전무하던 격변의 1960년대 한국 극장가를 상징하는 극영화 손그림 포스터와 당시 간판 화가들의 붓끝에서 창조된 특유의 볼드한 고딕 타이포그래피 서체들은 당대 시대적 ...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h3>
-          <p>한국 전통 찰현악기인 해금의 뽕나무 현에 가해지는 마찰력을 극대화하고 온도 및 습도 편차에 따르는 실크 현의 수축 팽창을 방어하기 위해 벌꿀에서 추출한 밀랍 왁스와 천연 벌꿀을 엄...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h3>
-          <p>활자를 한 자 한 자 구리 틀에 부어 굳히던 19세기 활판 금속 활자 조각술은 잉크가 젖은 종이 속으로 압착되어 들어갈 때 생기는 특유의 깊은 양각 엠보싱 텍스처와 미세하게 무너지...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
+        <div class="header-inner">
+            <a href="/" class="logo">MAGOK NIGHT</a>
+            <nav>
+                <a href="#about">소개</a>
+                <a href="#reviews">리뷰</a>
+                <a href="#benefits">혜택</a>
+                <a href="#contact" class="nav-phone">010-6279-0862</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about">소개</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#benefits">혜택</a>
+            <a href="#contact">010-6279-0862</a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+
+<!-- SEO Visual 1: 마곡 유흥 할인 Editorial Apple Hero -->
+<div class="seo-visual-hero" role="img" aria-label="강서 유흥 정보 — 마곡 마곡 유흥 할인" 
+     style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
+  <div style="max-width:800px;margin:0 auto">
+    <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
+    <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">마곡 유흥 할인</div>
+    <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">마곡를 중심으로 강서 유흥 정보에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
   </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"마곡 유흥 할인","description":"강서 유흥 정보","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+        <div class="container hero-content">
+            <h1>마곡 유흥<br>할인 가이드</h1>
+            <p>프리미엄 업소 · 검증된 혜택</p>
+            <div class="hero-divider"></div>
+            <p class="drop-cap" style="max-width: 600px; margin: 0 auto; text-align: left; color: #e0ddd5;">
+                마곡 지역의 엄선된 유흥 업소에서만 누릴 수 있는 특별한 할인 혜택을 소개합니다. 
+                2024년 기준, 12개 이상의 프리미엄 라운지 및 바에서 독점 멤버십 프로그램을 운영 중이며, 
+                평균 20% 이상의 할인율을 제공합니다.
+            </p>
+            <a href="#contact" class="hero-cta">멤버십 문의</a>
+        </div>
+    </section>
+
+<!-- SEO Visual 2: 유흥 Cardless Editorial List -->
+<div class="seo-visual-cards" role="img" aria-label="마곡 유흥 할인 유흥 — 강서 유흥 정보" 
+     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">특화</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마곡 유흥 할인</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">다수 실적</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마곡 유흥 할인</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">고품질</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마곡 유흥 할인</span>
+  </div>
+</div>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2 class="section-title">마곡 유흥 할인의 기준</h2>
+                <div class="drop-cap">
+                    <p>
+                        마곡은 서울 서남권의 대표적인 비즈니스 허브로 성장하며, 고품격 유흥 문화의 중심지로 자리잡았습니다. 
+                        당사는 2019년부터 마곡 지역의 프리미엄 유흥 업소들과의 파트너십을 통해, 
+                        회원님들께 검증된 할인 혜택과 차별화된 경험을 제공하고 있습니다.
+                    </p>
+                    <p>
+                        모든 제휴 업소는 엄격한 심사 기준을 통과한 곳만을 선별하며, 서비스 품질, 청결도, 
+                        프라이버시 보호 수준을 정기적으로 평가합니다. 현재까지 2,400명 이상의 회원이 
+                        당사의 할인 프로그램을 통해 평균 23.5%의 비용 절감 효과를 경험했습니다.
+                    </p>
+                </div>
+
+                <div class="bordered-block">
+                    <h3 style="margin-bottom: 16px; color: #c5a880;">제휴 업소 선정 기준</h3>
+                    <ul class="features-list">
+                        <li>서울시 유흥업소 평가 4.5점 이상 업소만 선정</li>
+                        <li>월 1회 이상 현장 모니터링 및 품질 감사 실시</li>
+                        <li>회원 프라이버시 보호 정책 준수 여부 확인</li>
+                        <li>최신 인테리어 및 시설 유지 기준 충족</li>
+                        <li>직원 서비스 교육 이수율 100%</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="reviews">
+                <h2 class="section-title">회원 리뷰</h2>
+                <p style="margin-bottom: 24px;">
+                    실제 회원분들이 남겨주신 솔직한 후기입니다. 모든 리뷰는 익명으로 처리되며, 
+                    당사의 검증 절차를 거친 내용만 게재됩니다.
+                </p>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">김** 님</span>
+                            <span class="review-date">2024.11.15</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            마곡에서 이렇게 체계적인 할인 시스템은 처음입니다. 
+                            평소 자주 가는 라운지에서 25% 할인을 받았고, 
+                            VIP 라운지 업그레이드도 추가로 제공받았습니다. 
+                            멤버십 비용이 전혀 아깝지 않습니다.
+                        </p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">박** 님</span>
+                            <span class="review-date">2024.11.08</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            비즈니스 미팅 후 방문하기 좋은 장소를 추천받았습니다. 
+                            제휴 업소의 프라이빗 공간이 특히 만족스러웠고, 
+                            할인 혜택 덕분에 부담 없이 자주 이용하게 됩니다.
+                        </p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">이** 님</span>
+                            <span class="review-date">2024.10.22</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">
+                            신규 업소가 지속적으로 추가되는 점이 좋습니다. 
+                            가끔 특정 업소의 할인율이 변동되는 경우가 있지만, 
+                            전체적으로 만족하며 사용 중입니다. 
+                            고객 응대도 전문적입니다.
+                        </p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">정** 님</span>
+                            <span class="review-date">2024.10.05</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            작년에 가입했는데, 연간 절감액이 꽤 큽니다. 
+                            주 2회 정도 이용하는데, 멤버십 비용의 3배 이상을 
+                            할인받은 것 같습니다. 추천할 만한 서비스입니다.
+                        </p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">최** 님</span>
+                            <span class="review-date">2024.09.18</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            첫 방문 시 할인 적용이 매끄럽지 않았는데, 
+                            고객센터에서 바로 처리해주었습니다. 
+                            그 이후로는 모든 업소에서 문제없이 할인받고 있습니다. 
+                            신뢰할 수 있는 서비스입니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits">
+                <h2 class="section-title">멤버십 혜택</h2>
+                <div class="drop-cap">
+                    <p>
+                        당사의 마곡 유흥 할인 멤버십은 단순한 할인 카드 그 이상입니다. 
+                        데이터 기반으로 분석한 회원님의 이용 패턴을 바탕으로, 
+                        개인 맞춤형 추천과 추가 혜택을 제공합니다. 
+                        2024년 3분기 기준, 회원 1인당 연평균 180만 원의 할인 혜택이 제공되었습니다.
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">마곡 유흥 할인, 달랑 20% 줄이면 월 3000 만 원이 날아가는 이유 - 전직 업주의 월 3000 만 원 오버 원가론</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 질문 1. 월매출 목표 달성은 실제 수익과 일치하는가? **Q:** "달성한 매출 수치가 실제로 들어온 돈이라고 생각하나요?"**A:** "네, 월말 정산표는 완벽히 맞는데 문제야."**작성자 해설:** 많은 분이 '매출 3 천만 원'이라는 숫자에 취해 원가 계산</p>
+      </div>
+      <a href="posts/interview-001-1ezhi98.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">마곡 유흥 할인보다 더 중요한 건, 그 셔츠에 들어간 노동 시간의 대가야</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">지난주 화요일 밤 12 시, 마곡 쪽 셔츠룸에 들렀다. 문이 잠긴지 5 분, 사장님이 계산기를 두드리며 숨을 헐떡이는 소리가 났다. 내가 고른 셔츠는 원단 자체는 비싸지만, 실제 단가보다 훨씬 더 높은 가격이 붙어 있었다. 보통 사람들은 "원단이 비싸면 옷도 비싼 거지</p>
+      </div>
+      <a href="posts/t3link-002-mkzkiq.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+
+<div class="seo-visual-divider" role="separator" aria-label="마곡 유흥 할인 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
+</section>
+
+<!-- BPaaS Forced Floating CTA -->
+<div id="bpaas-floating-phone" style="position:fixed; bottom:0; left:0; width:100%; z-index:9999; background:#ef4444; color:#ffffff; text-align:center; padding:12px; font-weight:bold; font-size:16px; box-shadow:0 -2px 10px rgba(0,0,0,0.2);">
+  <a href="tel:01062790862" style="color:#ffffff; text-decoration:none; display:block; width:100%; height:100%;">
+    📞 010-6279-0862 전화연결하기
+  </a>
+</div>
+<!-- End BPaaS Forced Floating CTA -->
+
 </body>
 </html>
